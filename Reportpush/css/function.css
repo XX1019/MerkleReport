@@ -13,7 +13,10 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: lightsteelblue;
-	
+	background-image: url(../img/bg.jpg);
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 /*body {
 	margin: 0px;
