@@ -165,13 +165,7 @@ function submit_y() {
 			alert('Please fill out!');
 		} 
 		else {
-//		if(allocated.endsWith("%")==false){
-//			allocated=allocated+"%";
-//		}
-//			if(actual.endsWith("%")==false){
-//			actual=actual+"%";
-//		}
-//			actual.substr(actual.length-1,1)
+
 	if(allocated.substr(allocated.length-1,1)!='%'){
 			allocated=allocated+"%";
 		}
