@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Query Project</title>
+		<script type="text/javascript" src="js/ZeroClipboard.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="https://cdn1.lncld.net/static/js/av-mini-0.6.1.js"></script>
+		<script type="text/javascript" src="js/query_project.js"></script>
+
+	</head>
+
+	<body>
+
+		<body>
+			<style>
+				body {
+					background-image: url(img/bg.jpg);
+					-webkit-background-size: 100%;
+					background-size: 100%;
+					/*background-repeat: no-repeat;*/
+				}
+				#present {
+					width: 1200px;
+					margin: 0 auto;
+					/*background-color: aliceblue;*/
+				}
+				#hey {
+					margin: 50px auto;
+				}
+				#all,.send,#return{
+					position: relative;
+					width: 100px;
+					height: 40px;
+					margin-left: 100px;
+					margin-top: 50px;
+					line-height: 30px;
+					overflow: hidden;
+					border: 1px solid #3079ec;
+					background-color: #4b8cf7;
+					border-radius: 4px;
+					color: white;
+					text-align: center;
+				}
+				/*.send {
+					position: relative;
+					width: 100px;
+					height: 40px;
+					margin-left: 200px;
+					margin-top: 0;
+					line-height: 30px;
+					overflow: hidden;
+					border: 1px solid #3079ec;
+					background-color: #4b8cf7;
+					border-radius: 4px;
+					color: white;
+					text-align: center;
+				}*/
+			</style>
+			<div class="q_all">
+				<input type="button" value="Return" id="return" onclick="goback()" />
+				<input type="button" value="Query All" id="all" onclick="get_all()" />
+				<a id="href" href="#">
+					<input id="send"  class="send" type="button" value="Send-Email" onclick="send()" style="width:100px; height:40px;  border-color:#339999;font-family:"宋体";" />
+				</a>
+
+			</div>
+			<div id="present">
+				<table border="1" id="hey">
+					<tr bgcolor="#4B8CF7">
+						<th>Project </th>
+						<th>DEL/SM</th>
+						<th>GDC Manager</th>
+						<th>Team Member</th>
+						<th>Allocated %</th>
+						<th>Actual %</th>
+						<th>Workload </th>
+						<th>Key Accomplishments</th>
+					</tr>
+				</table>
+			</div>
+		
+
+				
+			<!--<tr>
+	<td rowspan="3">Bose</td>
+		<td rowspan="3">AA</td>
+		<td rowspan="3">Myra Cao</td>
+		<td>1</td>
+		<td>100</td>
+		<td>80</td>
+		<td>high</td>
+		<td rowspan="3">biuiubiu</td>
+</tr>
+<tr>
+		<td>2</td>
+		<td>100</td>
+		<td>80</td>
+		<td>high</td>
+</tr>
+	<tr>
+		<td>3</td>
+		<td>100</td>
+		<td>80</td>
+		<td>high</td>
+	</tr>
+	-->
+
+			<!--<input type="button"  onclick="get_asManager()"/>-->
+		</body>
+
+</html>

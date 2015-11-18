@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Modify Project</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="https://cdn1.lncld.net/static/js/av-mini-0.6.1.js"></script>
+		<script type="text/javascript" src="js/modify_project.js"></script>
+		<link rel="stylesheet" href="css/modify project.css" />
+		<!--<link rel="stylesheet" href="css/function.css" />-->
+	</head>
+
+	<body>
+		
+
+		<div id="container">
+			<div id="add">
+				<p>
+					<label>Project Name:</label>
+					<select id="select_project" onchange="linkage()">
+						<option style="width:200px">---Please Choose--</option>
+					</select>
+				</p>
+				<p>
+					<label>DEL/SM:</label>
+					<label id="sm"></label>
+				</p>
+				<p>
+					<label>GDC Manager:</label>
+					<label id="gdc"></label>
+				</p>
+			</div>
+			<div id="about_member">
+				<p><span class="member_has">Team Member(s):</span></p>
+				<p>
+					<label>Delete Member </label>
+					<select class="d_m">
+						<option style="width:150px">---Please Choose--</option>
+					</select>
+					<input type="button" class="minus" onclick="de_m()" />
+				</p>
+				<p id="member">
+					<label>Add Member </label>
+					<select class="add_member" onchange="">
+						<option style="width:150px" value="please">---Please Choose--</option>
+					</select>
+					<input type="button" id="add_m" onclick="modify_p()" />
+
+				</p>
+				<!--<p>
+				<label>member :</label>
+				
+				<input type="button" class="minus"/ onclick="delete_m()">
+			</p>-->
+			</div>
+
+			<div class="bu">
+				<!--<input type="button" value="Modify" class="but_add" onclick="modify_p()"/>-->
+				<input type="button" value="Return" class="but_add" onclick="cancel()" />
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Delete Project</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+		<script src="https://cdn1.lncld.net/static/js/av-mini-0.6.1.js"></script>
+		<link rel="stylesheet" href="css/add_project.css" />
+		<script type="text/javascript" src="js/delete_project.js" ></script>
+	</head>
+	<body>
+		
+		<div id="container">
+		<div id="add">
+			<p>
+			<label>Project Name:</label>
+		<select id="select_project" onchange="linkage()">
+   			<option style="width:200px">---Please Choose--</option>
+  	</select>
+		</p>
+		<p>
+		<label>DEL/SM:</label>
+		<label id="sm"></label>
+		</p>
+		<p>
+		<label>GDC Manager:</label>
+		<label id="gdc"></label>
+		
+		</p>
+		</div>
+		<div class="bu">
+			<input type="button" value="Delete" class="but_add" onclick="deleted()"/>
+			<input type="button" value="Cancel" class="but_add" onclick="cancel()"/>
+
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+/*<div class="container">
+			<div class="logo"></div>
+			<div class="wrap">
+			
+			<div class="avatar"></div>
+			<div class="input"></div>
+			<duv class="button"></duv>
+			</div>	</div>		*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	/*background: linear-gradient(to bottom,skyblue 0%,ghostwhite 50%,skyblue 100%);	background: linear-gradient();*/
+	background-color: ghostwhite;
+	/*background-image: url(../img/bg.jpg);*/
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	/*background-repeat: no-repeat;*/
+}
+.container {
+	height: 500px;
+	width: 400px;
+	/*background-color: #F0F8FF;*/
+	
+	/*background: -moz-linear-gradient(bottom, ghostwhite, aliceblue);
+	background: -webkit-gradient(linear, left center, right center, from(ghostwhite), color-stop(50%, aliceblue), to(ghostwhite));*/
+	/*谷歌*/
+	box-shadow: 0px 2px 2px 0px #c0c0c0,
+				1px 0px 1px 0px #c0c0c0	;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+.logo {
+	height: 100px;
+	width: 300px;
+	/*background-color:ghostwhite ;*/
+	
+	margin: 0 auto;
+	font-size: 55px;
+	text-align: center;
+	font-style: italic;
+	color: dodgerblue;
+}
+.wrap {
+	background-color: white;
+	box-shadow: 0 2px 2px 0 #c0c0c0;
+	height: 350px;
+	width: 300px;
+	margin: 10px 50px 0px 50px;
+	position: absolute;
+}
+#avatar {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background: url(../img/avatar.png) no-repeat center;
+	margin: 10px 100px;
+}
+.ipt {
+	border: 1px solid #d3d3d3;
+	padding: 10px 10px;
+	width: 200px;
+	border-radius: 4px;
+	padding-left: 40px;
+	margin-left: 25px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.ipt:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+.u_logo {
+	background: url(../img/username.png) no-repeat;
+	/*background-image: url(../img/password.png);*/
+	
+	padding: 10px 10px;
+	position: absolute;
+	top: 43px;
+	left: 40px;
+}
+.p_logo {
+	background: url(../img/password.png) no-repeat;
+	padding: 10px 10px;
+	position: absolute;
+	top: 12px;
+	left: 40px;
+}
+#but {
+	width: 40%;
+	height: 40px;
+	line-height: 30px;
+	overflow: hidden;
+	border: 1px solid #3079EC;
+	background-color: #4b8cf7;
+	border-radius: 6px;
+	margin: 3% 30%;
+	margin-bottom:-4% ;
+	color: white;
+	text-align: center;
+}
+.register {
+	font-size: 14px;
+	color: cornflowerblue;
+	position: relative;
+	margin-left: 78%;
+	
+}
+.but {
+	width: 25%;
+	height: 40px;
+	line-height: 30px;
+	overflow: hidden;
+	border: 1px solid #3079EC;
+	background-color: #4b8cf7;
+	border-radius: 4px;
+	margin-left: 50px;
+	color: white;
+	text-align: center;
+	/*font-size: 14px;*/
+}
+#butt {
+	margin-top: 25px;
+}
+div a{
+	font-weight: bold;
+	/*color: royalblue;*/
+}
+div a:hover{
+	font-weight: bold;
+	color: palevioletred;
+}
+.but:hover,#but:hover{
+		/*background-color: deepskyblue;*/
+		  /*text-shadow: 0 -1px 1px rgba(0,0,0,0.25);*/
+		 background-color:#3079EC;
+		 border:#F2F2F2;
+}

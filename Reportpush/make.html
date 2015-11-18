@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Make Report</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="https://cdn1.lncld.net/static/js/av-mini-0.6.1.js"></script>
+		<script type="text/javascript" src="js/make.js"></script>
+		<link rel="stylesheet" href="css/modify project.css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="add">
+				<p>
+					<label>Your Project:</label>
+					<select class="belongP" onchange="link_p()">
+						<option>---Please choose--</option>
+
+					</select>
+				</p>
+				<p>
+					<label>DEL/SM:</label>
+					<label id="sm"></label>
+				</p>
+				<p>
+					<label>GDC Manager:</label>
+					<label id="gdc"></label>
+				</p>
+				<p>
+					<label>My allocated:</label>
+					<label class="allocated_f"></label>
+					<input type="text" class="allocated_l" onchange="compare()" />
+				</p>
+				<p>
+					<label>Actual:</label>
+					<label class="actual_f"></label>
+					<input type="text" class="actual_l" onchange="compare()" />
+				</p>
+				<p>
+					<label>Workload:</label>
+					<select class="load" disabled="true">
+						<option>------</option>
+						<option>Low</option>
+						<option>Medium</option>
+						<option>High</option>
+					</select>
+				</p>
+				<p>
+					<label>Acconplishment:</label>
+					<br />
+					<textarea class="textarea" spellcheck="true"></textarea>
+				</p>
+			</div>
+			<div id="sub">
+				<input type="button" value="Submit" onclick="submit_y()" class="but_add" />
+				<input type="button" value="Cancel" onclick="cancel()" class="but_add" />
+			</div>
+		</div>
+	</body>
+
+</html>

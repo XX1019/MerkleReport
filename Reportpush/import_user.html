@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+				<script src="https://cdn1.lncld.net/static/js/av-mini-0.6.1.js"></script>
+
+	</head>
+	<body>
+		<script>
+							function adding() {
+					var User = AV.Object.extend("User");
+					var mm = [
+						"Kevin Mao",
+						"Bryan Han",
+						"Ryin Zhang",
+						"Dora  Zhang",
+						"Mengmeng Liu",
+						"Bill Li",
+						"May Wang",
+						"Sumiu Zhao",
+						"Yingkun Yang",
+						"Arlene Ye",
+						"Sunny Lin",
+						"Johnny Liu",
+						"Simon Liu",
+						"Megan Xu",
+						"Yolanda Xia",
+						"Cassy Wang",
+						"Sky Hai",
+						"Jean Wan",
+						"Erica Lu",
+						"Eric Hu",
+						"April Yu",
+						//"Linda",
+						"Joyce Fan",
+						"Mark Luo",
+//						"May Cang",
+//						"Shawn Gu",
+//						"Karl Cen",
+//						"Jean Wan",
+//						"Sam Du",
+//						"Kimi Zhang",
+//						"Cynthia Wang",
+//						"Lily Gao",
+//						"Delia Zhao",
+//						"Julia Xu",
+//						"Li Zhu",
+//						"Aimee Cao",
+//						"Neil Dong",
+//						"Yingkun Yang",
+//						"Liyan Du",
+//						//"Don He",
+//						"Emma Yang",
+//						"Grace Han",
+//						"Arlene Ye",
+//						"Chuang Zhang",
+//						"Bill Li",
+//						"May Wang",
+//						//"Chen Chen",
+//						"Rongyao Wang",
+//						"Delia Zhao",
+//						"Victor Gao",
+//						"Feifei Li",
+//						"Cassy Wang",
+//						"Charlene Yuan",
+//						"Rongyao Wang",
+//						"Dora Zhang",
+//						"Ye Chen",
+//						"April Yu",
+//						"Danny Hu",
+//						"Rachel Liu",
+//						"Leo Wang",
+//						"Yolanda Xia",
+//						"Steven Xu",
+//						"Simon Liu",
+						"Don He"
+					];
+					console.log(mm.length);
+					for (var i = 1; i < mm.length; i++) {
+						console.log(mm[i]);
+						//member.set("name",mm[i]);
+						//					member.set("allocated","");
+						//					member.set("actual","");
+						//					member.set("workload","");
+						var member = new User();
+						//member.set('username',mm[i]);
+						//member.set('password',123456);
+						member.save({
+							'username':mm[i]
+						});
+					}
+				}
+				
+			
+			
+//			null,{
+//							success:function(){
+//								console.log('success');
+//							},
+//							error:function(){
+//								console.log('error');
+//							}
+			
+			
+		</script>
+		<input type="button" onclick="adding()" />
+		
+	</body>
+</html>
